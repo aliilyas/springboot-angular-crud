@@ -30,3 +30,7 @@ out/
 
 ### VS Code ###
 .vscode/
+/src/main/webapp/node_modules/
+/src/main/webapp/e2e/
+/src/main/webapp/dist/
+/src/main/webapp/tmp/
