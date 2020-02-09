@@ -1,0 +1,36 @@
+<div class="card my-2">
+  <div class="card-body">
+    <table class="table table-bordered table-striped">
+      <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">Age</th>
+        <th scope="col">Colour</th>
+        <th scope="col">Hobby</th>
+        <th scope="col">Edit</th>
+        <th scope="col">Delete</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let person of personsArray; let i = index">
+        <td>{{ i + 1 }}</td>
+        <td>{{ person.first_name + " " + person.last_name }}</td>
+        <td>{{ person.age}}</td>
+        <td>{{ person.favourite_colour}}</td>
+        <td>
+          <div *ngFor="let hobby of person.hobby" class="d-inline">
+            <span class="ml-2 badge badge-pill badge-primary"> {{hobby}} </span>
+          </div>
+        </td>
+        <td>
+          <button class="btn btn-primary"  (click)="edit(person)"><i class="fas fa-edit"></i></button>
+        </td>
+        <td>
+          <button class="btn btn-primary"  (click)="delete(person)"><i class="fa fa-trash-alt"></i></button>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

@@ -1,0 +1,82 @@
+<div class="card my-2">
+  <div class="card-body">
+    <form (ngSubmit)="onSubmit()" #personForm="ngForm">
+      <div class="form-group">
+        <label for="first_name">First name</label>
+        <input type="text" [(ngModel)]="person.first_name"
+               class="form-control"
+               id="first_name"
+               name="first_name"
+               placeholder="Enter your first name"
+               required #first_name="ngModel"
+        >
+        <div *ngIf="first_name.invalid && (first_name.dirty || first_name.touched)"
+             class="alert alert-danger">
+          <div *ngIf="first_name.errors.required">
+            Name is required.
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="last_name">Last name</label>
+        <input type="text" [(ngModel)]="person.last_name"
+               class="form-control"
+               id="last_name"
+               name="last_name"
+               placeholder="Enter your last name"
+               required #last_name="ngModel"
+        >
+        <div *ngIf="last_name.invalid && (last_name.dirty || last_name.touched)"
+             class="alert alert-danger">
+          <div *ngIf="last_name.errors.required">
+            Last name is required.
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="age">Age</label>
+        <input type="number" [(ngModel)]="person.age"
+               class="form-control"
+               id="age"
+               name="age"
+               placeholder="Enter your age"
+               required #age="ngModel"
+        >
+        <div *ngIf="age.invalid && (age.dirty || age.touched)"
+             class="alert alert-danger">
+          <div *ngIf="age.errors.required">
+            Age is required.
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="favourite_colour">Favourite colour</label>
+        <input type="text" [(ngModel)]="person.favourite_colour"
+               class="form-control"
+               id="favourite_colour"
+               name="favourite_colour"
+               placeholder="Enter your favourite colour"
+               required #favourite_colour="ngModel"
+        >
+        <div *ngIf="favourite_colour.invalid && (favourite_colour.dirty || favourite_colour.touched)"
+             class="alert alert-danger">
+          <div *ngIf="favourite_colour.errors.required">
+            Favourite colour is required.
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="favourite_colour">Hobby</label>
+        <tag-input [(ngModel)]='person.hobby' name="hobby" placeholder="new hobby"
+                   secondaryPlaceholder="Enter hobby"></tag-input>
+      </div>
+
+      <button type="submit" [disabled]="!personForm.form.valid" class="btn btn-info "
+              (click)="onSubmit(); personForm.reset()">
+        {{editMode ? "Edit" : "Save"}}
+      </button>
+    </form>
+  </div>
+</div>
