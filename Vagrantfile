@@ -31,6 +31,6 @@ Vagrant.configure("2") do |config|
     echo JAVA SERVER PID - $!
     cd src/main/webapp
     npm i
-    ng serve --port 4200 --host 0.0.0.0Java
+    ng serve --port 4200 --host 0.0.0.0
   SHELL
 end
