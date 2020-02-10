@@ -19,7 +19,7 @@ $ yum -y install java maven git vim testng-javadoc jq gcc-c++ make nodejs
 $ npm install -g @angular/cli@9.0.1
 ```
 
-Check major version is same ,
+Check major version has same number:
 ```sh
 $ node -v
 $ v10.16.3
