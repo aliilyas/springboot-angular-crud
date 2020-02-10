@@ -44,7 +44,8 @@ $ cd src/main/webapp
 $ npm i
 $ ng serve 
 ```
-Frontend  `4200`
+Frontend port  `4200`
+
 Backend port `8080`
 
 
