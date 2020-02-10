@@ -30,6 +30,7 @@ export class PersonFormComponent implements OnInit {
     } else {
       this.personService.update(this.person).subscribe(updateTable);
       this.editMode = false;
+      this.person = new Person();
     }
   }
 
