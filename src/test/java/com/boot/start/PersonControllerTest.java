@@ -1,5 +1,6 @@
-package uk.ebi.embi;
+package com.boot.start;
 
+import com.boot.start.domain.Person;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.Before;
@@ -13,8 +14,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.ResultActions;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
-import uk.ebi.embi.domain.Person;
-import uk.ebi.embi.service.PersonService;
+import com.boot.start.service.PersonService;
 
 import java.util.Arrays;
 import java.util.UUID;

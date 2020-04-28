@@ -1,4 +1,4 @@
-package uk.ebi.embi.exception;
+package com.boot.start.exception;
 
 public class EntityNotFoundException extends RuntimeException {
     public EntityNotFoundException(Class clazz, String uuid) {

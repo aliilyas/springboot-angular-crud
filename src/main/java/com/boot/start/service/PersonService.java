@@ -1,6 +1,6 @@
-package uk.ebi.embi.service;
+package com.boot.start.service;
 
-import uk.ebi.embi.domain.Person;
+import com.boot.start.domain.Person;
 
 import java.util.List;
 

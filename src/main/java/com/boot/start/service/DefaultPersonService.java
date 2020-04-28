@@ -1,13 +1,13 @@
-package uk.ebi.embi.service;
+package com.boot.start.service;
 
+import com.boot.start.domain.Person;
+import com.boot.start.exception.EntityNotFoundException;
+import com.boot.start.repository.PersonRepository;
+import com.boot.start.util.Copy;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
-import uk.ebi.embi.util.Copy;
-import uk.ebi.embi.domain.Person;
-import uk.ebi.embi.exception.EntityNotFoundException;
-import uk.ebi.embi.repository.PersonRepository;
 
 import java.util.List;
 

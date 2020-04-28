@@ -1,4 +1,4 @@
-package uk.ebi.embi.config;
+package com.boot.start.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
@@ -6,6 +6,6 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @Configuration
 @EnableJpaAuditing
-@EnableJpaRepositories(basePackages = "uk.ebi.embi")
+@EnableJpaRepositories(basePackages = "com.boot.start")
 public class JpaConfig {
 }

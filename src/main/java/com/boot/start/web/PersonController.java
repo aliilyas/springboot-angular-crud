@@ -1,11 +1,11 @@
-package uk.ebi.embi.web;
+package com.boot.start.web;
 
+import com.boot.start.domain.Person;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
-import uk.ebi.embi.domain.Person;
-import uk.ebi.embi.service.PersonService;
+import com.boot.start.service.PersonService;
 
 import javax.validation.Valid;
 import java.util.List;

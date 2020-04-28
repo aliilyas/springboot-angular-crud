@@ -1,5 +1,8 @@
-package uk.ebi.embi;
+package com.boot.start;
 
+import com.boot.start.domain.Person;
+import com.boot.start.exception.EntityNotFoundException;
+import com.boot.start.repository.PersonRepository;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Rule;
@@ -10,10 +13,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.junit4.SpringRunner;
-import uk.ebi.embi.domain.Person;
-import uk.ebi.embi.exception.EntityNotFoundException;
-import uk.ebi.embi.repository.PersonRepository;
-import uk.ebi.embi.service.PersonService;
+import com.boot.start.service.PersonService;
 
 import java.util.Arrays;
 

@@ -1,4 +1,4 @@
-package uk.ebi.embi.web;
+package com.boot.start.web;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

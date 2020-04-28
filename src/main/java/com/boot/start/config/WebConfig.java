@@ -1,4 +1,4 @@
-package uk.ebi.embi.config;
+package com.boot.start.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;

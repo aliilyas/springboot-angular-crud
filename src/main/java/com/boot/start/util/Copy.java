@@ -1,4 +1,4 @@
-package uk.ebi.embi.util;
+package com.boot.start.util;
 
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.BeanWrapper;

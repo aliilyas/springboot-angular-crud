@@ -5,12 +5,12 @@
 
 ### Development
 
-The application consists of a frontend and a backend. Both can be started separately. The frontend is  [Angular 9](https://angular.io/)  based and the backend is based on  [Spring Boot](https://spring.io/projects/spring-boot).
+Starter project with angular and spring boot.
 
 ## Installation
 
 ### Prerequisites
-Ensure you have installed : `node 10x, java 8+, git , angular cli 9x`
+Installation : `node 10x, java 8+, git , angular cli 9x`
 
 ```sh
 $ yum -y install epel-release
@@ -19,7 +19,7 @@ $ yum -y install java maven git vim testng-javadoc jq gcc-c++ make nodejs
 $ npm install -g @angular/cli@9.0.1
 ```
 
-Check major version has same number:
+Check major versions (can be outdated):
 ```sh
 $ node -v
 $ v10.16.3
@@ -29,8 +29,6 @@ $ ng version
 $ 9.0.1
 ```
 
-> Clone this repo   `git clone https://github.com/aliilyas/springboot-angular-crud.git`
-> 
 
 
 ```sh
@@ -44,9 +42,9 @@ $ cd src/main/webapp
 $ npm i
 $ ng serve 
 ```
-Frontend port  `4200`
+FE port  `4200`
 
-Backend port `8080`
+API port `8080`
 
 
 ### Vagrant
@@ -55,7 +53,7 @@ Vagrant config is located in project root folder
 ```sh
 vagrant up
 ```
-Please take a look at `config.vm.provider`. And adjust according to your machine settings.
+Take a look at `config.vm.provider`. And adjust according to your machine settings.
 ```sh
 config.vm.provider "virtualbox" do |v|  
   v.memory = 4096  
